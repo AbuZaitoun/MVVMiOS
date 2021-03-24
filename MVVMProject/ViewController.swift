@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     func configureModels(){
         let names = ["name 1", "name 2", "name 3", "name 4"]
         for name in names {
-            models.append(Person(name: name))
+            models.append(Person(name: name, username: "Temp name"))
         }
     }
     
@@ -37,9 +37,17 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: PersonFollowingTableViewCell.identifier, for: indexPath) as! PersonFollowingTableViewCell
-        cell.textLabel?.text = models[indexPath.row].name
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PersonFollowingTableViewCell.identifier, for: indexPath) as? PersonFollowingTableViewCell
+        else {
+            return UITableViewCell()
+        }
+        cell.configure(with: PersonFollowingTableViewCellViewModel(with: models[indexPath.row]))
+        cell.delegate = self
         return cell
     }
 }
-
+extension ViewController: PersonFollowingTableViewCellDelegate {
+    func personFollowingTableViewCell(_ cell: PersonFollowingTableViewCell, didTapWith viewMode: PersonFollowingTableViewCellViewModel) {
+        
+    }
+}

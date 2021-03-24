@@ -13,5 +13,6 @@ enum Gender {
 
 struct Person {
     let name: String
+    let username: String
 }
 
