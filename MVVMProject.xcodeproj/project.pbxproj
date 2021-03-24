@@ -13,6 +13,9 @@
 		763AAF34260B6B180019AE3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763AAF32260B6B180019AE3A /* Main.storyboard */; };
 		763AAF36260B6B1B0019AE3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763AAF35260B6B1B0019AE3A /* Assets.xcassets */; };
 		763AAF39260B6B1B0019AE3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 763AAF37260B6B1B0019AE3A /* LaunchScreen.storyboard */; };
+		763AAF42260B6E4C0019AE3A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AAF41260B6E4C0019AE3A /* Models.swift */; };
+		763AAF45260B6E930019AE3A /* PersonFollowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AAF44260B6E930019AE3A /* PersonFollowingTableViewCell.swift */; };
+		763AAF48260B70040019AE3A /* PersonFollowingTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AAF47260B70040019AE3A /* PersonFollowingTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		763AAF35260B6B1B0019AE3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		763AAF38260B6B1B0019AE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		763AAF3A260B6B1B0019AE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		763AAF41260B6E4C0019AE3A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		763AAF44260B6E930019AE3A /* PersonFollowingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingTableViewCell.swift; sourceTree = "<group>"; };
+		763AAF47260B70040019AE3A /* PersonFollowingTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonFollowingTableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				763AAF35260B6B1B0019AE3A /* Assets.xcassets */,
 				763AAF37260B6B1B0019AE3A /* LaunchScreen.storyboard */,
 				763AAF3A260B6B1B0019AE3A /* Info.plist */,
+				763AAF41260B6E4C0019AE3A /* Models.swift */,
+				763AAF44260B6E930019AE3A /* PersonFollowingTableViewCell.swift */,
+				763AAF47260B70040019AE3A /* PersonFollowingTableViewCellViewModel.swift */,
 			);
 			path = MVVMProject;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				763AAF31260B6B180019AE3A /* ViewController.swift in Sources */,
+				763AAF48260B70040019AE3A /* PersonFollowingTableViewCellViewModel.swift in Sources */,
+				763AAF45260B6E930019AE3A /* PersonFollowingTableViewCell.swift in Sources */,
 				763AAF2D260B6B180019AE3A /* AppDelegate.swift in Sources */,
 				763AAF2F260B6B180019AE3A /* SceneDelegate.swift in Sources */,
+				763AAF42260B6E4C0019AE3A /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
